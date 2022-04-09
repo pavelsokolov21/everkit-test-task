@@ -3,21 +3,7 @@ import { Token as TokenInterface } from '../../../../interfaces/token'
 import { icons } from '../../../../menu'
 import classes from './token.module.css'
 
-type Props = Pick<
-  TokenInterface,
-  | 'id'
-  | 'logoURI'
-  | 'name'
-  | 'symbol'
-  | 'price'
-  | 'priceChange'
-  | 'volume'
-  | 'volumeChangePercentage'
-  | 'tvl'
-  | 'tvlChangePercentage'
-  | 'users'
-  | 'description'
->
+type Props = Omit<TokenInterface, 'categories' | 'address'>
 
 const getClassByPercentage = (percentage: number): string => {
   if (percentage > 0) {
