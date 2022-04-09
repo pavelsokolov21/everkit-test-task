@@ -1,12 +1,14 @@
 .token {
-  display: grid;
-  grid-template-columns: 46px 1.5fr repeat(4, 1fr) 32px;
-  align-items: center;
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.32s ease;
-  cursor: pointer;
+}
+
+.token__infoContainer {
+  display: grid;
+  grid-template-columns: 46px 1.5fr repeat(4, 1fr) 32px;
+  align-items: center;
 }
 
 .token:hover {
@@ -35,7 +37,8 @@
 .token__tvl,
 .token__volumeChangePercentage,
 .token__tvlChangePercentage,
-.token__users {
+.token__users,
+.token__description {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   line-height: 120%;
@@ -142,4 +145,20 @@
 
 .token__openDescriptionButton_opened {
   transform: rotate(180deg);
+}
+
+.token__description {
+  max-height: 0;
+  font-size: 16px;
+  color: #5d5e6c;
+  overflow: hidden;
+  transition: all 0.22s linear;
+}
+
+.token__description > p {
+  margin-top: 24px;
+}
+
+.token__description_opened {
+  max-height: 150px;
 }

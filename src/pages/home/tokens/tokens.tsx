@@ -19,6 +19,7 @@ export const Tokens: FC = () => (
         tvl={token.tvlChangePercentage}
         tvlChangePercentage={token.tvlChangePercentage}
         users={token.users}
+        description={token.description}
       />
     ))}
   </ul>
