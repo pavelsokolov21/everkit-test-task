@@ -1,3 +1,8 @@
+.main {
+  border-top-left-radius: 32px;
+  background-color: #f7f7fb;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;

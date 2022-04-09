@@ -1,6 +1,17 @@
 .sidebar {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
   padding: 64px 24px 24px 24px;
   width: 320px;
   box-sizing: border-box;
-  background: linear-gradient(200deg, #b380fd 12%, #6347f5 78%);
+}
+
+.sidebar__language {
+  text-align: center;
+  align-self: flex-end;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #ffffff;
 }

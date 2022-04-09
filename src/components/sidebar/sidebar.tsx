@@ -8,5 +8,6 @@ export const Sidebar: FC = () => (
   <aside className={classes.sidebar}>
     <Logo />
     <Menu menu={menu} />
+    <p className={classes.sidebar__language}>Русский</p>
   </aside>
 )
