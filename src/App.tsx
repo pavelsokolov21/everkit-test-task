@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Sidebar } from './components/sidebar'
-import { tokens, categories } from './tokens'
+import { categories } from './tokens'
 import './App.css'
+import { Home } from './pages/home'
 
 function App() {
   const [category, setCategory] = useState(categories[0])
@@ -9,11 +10,7 @@ function App() {
   return (
     <div className="app">
       <Sidebar />
-      <div className="tokens">
-        {tokens.map((item) => (
-          <div className="token">{item.name}</div>
-        ))}
-      </div>
+      <Home />
     </div>
   )
 }

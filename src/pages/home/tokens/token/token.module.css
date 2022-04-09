@@ -1,0 +1,145 @@
+.token {
+  display: grid;
+  grid-template-columns: 46px 1.5fr repeat(4, 1fr) 32px;
+  align-items: center;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.32s ease;
+  cursor: pointer;
+}
+
+.token:hover {
+  box-shadow: 0px 0px 0px 2px #6347f5;
+}
+
+.token__id {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #93949d;
+}
+
+.token__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.token__name,
+.token__symbol,
+.token__price,
+.token__percentageChanges,
+.token__volume,
+.token__tvl,
+.token__volumeChangePercentage,
+.token__tvlChangePercentage,
+.token__users {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.token__companyContainer {
+  display: flex;
+  align-items: center;
+}
+
+.token__companyNameContainer {
+  margin-left: 20px;
+}
+
+.token__name {
+  font-size: 21px;
+  color: #000;
+}
+
+.token__symbol {
+  font-size: 16px;
+  color: #6347f5;
+}
+
+.token__price {
+  font-size: 18px;
+  color: #6347f5;
+}
+
+.token__percentageContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.token__percentageChanges {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.token__percentageChanges_negative {
+  color: #ff647c;
+}
+
+.token__percentageChanges_positive {
+  color: #30bf8c;
+}
+
+.token__percentageChanges_neutral {
+  color: #93949d;
+}
+
+.token__percentageChanges:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: -10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #93949d;
+  transform: translateY(-50%);
+}
+
+.token__volumeContainer,
+.token__tvlContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.token__volume,
+.token__tvl {
+  font-size: 18px;
+  color: #000;
+}
+
+.token__volumeChangePercentage,
+.token__tvlChangePercentage {
+  font-size: 16px;
+  color: #6347f5;
+}
+
+.token__usersContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.token__users {
+  color: #000;
+}
+
+.token__openDescriptionButton {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
+
+.token__openDescriptionButton_opened {
+  transform: rotate(180deg);
+}

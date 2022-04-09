@@ -5,8 +5,8 @@ import { menu } from '../../menu'
 import classes from './sidebar.module.css'
 
 export const Sidebar: FC = () => (
-  <div className={classes.sidebar}>
+  <aside className={classes.sidebar}>
     <Logo />
     <Menu menu={menu} />
-  </div>
+  </aside>
 )

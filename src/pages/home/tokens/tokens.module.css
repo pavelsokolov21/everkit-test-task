@@ -1,0 +1,5 @@
+.tokens {
+  display: grid;
+  grid-gap: 8px;
+  margin-top: 42px;
+}
