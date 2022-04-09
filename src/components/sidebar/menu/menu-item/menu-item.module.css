@@ -1,0 +1,41 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  max-width: 224px;
+  height: 60px;
+  padding: 0 24px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.menuItem__text {
+  max-height: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 120%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.menuItem__icon {
+  display: inline-block;
+  height: 24px;
+  margin-right: 24px;
+}
+
+.menuItem__icon > svg {
+  fill: #fff;
+}
+
+.menuItem_active {
+  background: #fff;
+}
+
+.menuItem_active .menuItem__text {
+  color: #000;
+}
+
+.menuItem_active .menuItem__icon > svg {
+  fill: #6347f5;
+}

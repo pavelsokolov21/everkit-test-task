@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { Sidebar } from './components/sidebar'
 import { tokens, categories } from './tokens'
-import { menu } from './menu'
 import './App.css'
 
 function App() {
@@ -8,11 +8,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="menu">
-        {menu.map((item) => (
-          <div className="menu-item">{item.title}</div>
-        ))}
-      </div>
+      <Sidebar />
       <div className="tokens">
         {tokens.map((item) => (
           <div className="token">{item.name}</div>
