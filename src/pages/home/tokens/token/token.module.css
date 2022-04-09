@@ -12,16 +12,16 @@
 }
 
 .token:hover {
-  box-shadow: 0px 0px 0px 2px #6347f5;
+  box-shadow: 0px 0px 0px 2px var(--secondary);
 }
 
 .token__id {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 120%;
-  color: #93949d;
+  color: var(--neutral);
 }
 
 .token__logo {
@@ -39,7 +39,7 @@
 .token__tvlChangePercentage,
 .token__users,
 .token__description {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--primaryFontFamily);
   font-weight: 500;
   line-height: 120%;
 }
@@ -55,17 +55,17 @@
 
 .token__name {
   font-size: 21px;
-  color: #000;
+  color: var(--black);
 }
 
 .token__symbol {
   font-size: 16px;
-  color: #6347f5;
+  color: var(--secondary);
 }
 
 .token__price {
   font-size: 18px;
-  color: #6347f5;
+  color: var(--secondary);
 }
 
 .token__percentageContainer {
@@ -81,15 +81,15 @@
 }
 
 .token__percentageChanges_negative {
-  color: #ff647c;
+  color: var(--primaryRed);
 }
 
 .token__percentageChanges_positive {
-  color: #30bf8c;
+  color: var(--green);
 }
 
 .token__percentageChanges_neutral {
-  color: #93949d;
+  color: var(--neutral);
 }
 
 .token__percentageChanges:not(:last-child)::after {
@@ -100,7 +100,7 @@
   width: 4px;
   height: 4px;
   border-radius: 100%;
-  background: #93949d;
+  background: var(--neutral);
   transform: translateY(-50%);
 }
 
@@ -114,13 +114,13 @@
 .token__volume,
 .token__tvl {
   font-size: 18px;
-  color: #000;
+  color: var(--black);
 }
 
 .token__volumeChangePercentage,
 .token__tvlChangePercentage {
   font-size: 16px;
-  color: #6347f5;
+  color: var(--secondary);
 }
 
 .token__usersContainer {
@@ -130,7 +130,7 @@
 }
 
 .token__users {
-  color: #000;
+  color: var(--black);
 }
 
 .token__openDescriptionButton {
@@ -150,7 +150,7 @@
 .token__description {
   max-height: 0;
   font-size: 16px;
-  color: #5d5e6c;
+  color: var(--neutral200);
   overflow: hidden;
   transition: all 0.22s linear;
 }

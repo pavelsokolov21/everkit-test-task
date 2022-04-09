@@ -9,9 +9,9 @@
 .sidebar__language {
   text-align: center;
   align-self: flex-end;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--primaryFontFamily);
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  color: #ffffff;
+  color: var(--white);
 }

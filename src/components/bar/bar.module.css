@@ -3,7 +3,7 @@
   padding: 8px;
   gap: 12px;
   border-radius: 24px;
-  background: #fff;
+  background: var(--white);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
 }
 
@@ -12,11 +12,11 @@
   padding: 8px;
   border: none;
   border-radius: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--primaryFontFamily);
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  color: #93949d;
+  color: var(--neutral);
   background: none;
   outline: none;
   cursor: pointer;
@@ -24,8 +24,8 @@
 }
 
 .bar__button_active {
-  color: #ffffff;
-  background: linear-gradient(201.66deg, #b380fd 12.94%, #6347f5 78.23%);
+  color: var(--white);
+  background: linear-gradient(201.66deg, var(--primary) 12.94%, var(--secondary) 78.23%);
   background-size: calc(100% + 8px) calc(100% + 8px);
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
 }

@@ -12,11 +12,11 @@
 
 .menuItem__text {
   max-height: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--primaryFontFamily);
   line-height: 120%;
   font-size: 18px;
   font-weight: 500;
-  color: #fff;
+  color: var(--white);
 }
 
 .menuItem__icon {
@@ -26,17 +26,17 @@
 }
 
 .menuItem__icon > svg {
-  fill: #fff;
+  fill: var(--white);
 }
 
 .menuItem_active {
-  background: #fff;
+  background: var(--white);
 }
 
 .menuItem_active .menuItem__text {
-  color: #000;
+  color: var(--black);
 }
 
 .menuItem_active .menuItem__icon > svg {
-  fill: #6347f5;
+  fill: var(--secondary);
 }

@@ -3,7 +3,7 @@
   height: 100%;
   min-height: 100vh;
   grid-template-columns: 320px 1fr;
-  background: linear-gradient(200deg, #b380fd 12%, #6347f5 78%);
+  background: linear-gradient(200deg, var(--primary) 12%, var(--secondary) 78%);
 }
 
 .tokens {
@@ -15,6 +15,6 @@
   width: 100%;
   padding: 24px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--white);
   margin-bottom: 8px;
 }

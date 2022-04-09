@@ -6,10 +6,10 @@
 }
 
 .header__title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--primaryFontFamily);
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 120%;
-  color: #000;
+  color: var(--black);
 }
