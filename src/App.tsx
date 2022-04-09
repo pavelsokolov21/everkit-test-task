@@ -1,12 +1,8 @@
-import { useState } from 'react'
-import { Sidebar } from './components/sidebar'
-import { categories } from './tokens'
-import './App.css'
 import { Home } from './pages/home'
+import { Sidebar } from './components/sidebar'
+import './App.css'
 
 function App() {
-  const [category, setCategory] = useState(categories[0])
-
   return (
     <div className="app">
       <Sidebar />
